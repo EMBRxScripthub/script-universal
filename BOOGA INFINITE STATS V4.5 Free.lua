@@ -1,33 +1,19 @@
-getgenv().Settings = {
-    [game.Players.LocalPlayer.Name] = {
-        PointSlot = "Slot1"; -- Slot that will receive points
-        NamekSlot = "Slot2"; -- Namekian slot that gives points
-        Mode2 = true; -- leave this on
-        WaitTimeTalk = 0.2; -- (reccommended 0.1 - 0.3 ) Wait time when talking to level NPCs
-        ExtraTime = 0; -- If you need more load time increase the value
-        KamiChatDelay = 0.3; -- Delay talking to kami (0.270 - 0.450 recommended)
-        IncomingReplicationLag = 0; -- If you need vpn, try this before
-        MaxPoints = math.huge; -- math.huge means infinite
-        AutoStats = false; -- Auto upgrades a stat
-        HideName = false; -- Will hide your name in the stats UI
-        Stat = "Phys-Damage"; -- Health-Max,Ki-Max,Phys-Damage,Phys-Resist,Ki-Damage,Ki-Resist,Speed
-        IsPointSlotANamekian = false; -- If point slot isnt a namekian it will be faster to start and more secure, put to true if point slot is a namekian
-    },
-
-    ["AnotherAccountName"] = {
-        PointSlot = "Slot1"; -- Slot that will receive points
-        NamekSlot = "Slot2"; -- Namekian slot that gives points
-        Mode2 = true; -- leave this on
-        WaitTimeTalk = 0.2; -- (reccommended 0.1 - 0.3 ) Wait time when talking to level NPCs
-        ExtraTime = 0; -- If you need more load time increase the value
-        KamiChatDelay = 0.3; -- Delay talking to kami (0.270 - 0.450 recommended)
-        IncomingReplicationLag = 0; -- If you need vpn, try this before
-        MaxPoints = math.huge; -- math.huge means infinite
-        AutoStats = false; -- Auto upgrades a stat
-        HideName = false; -- Will hide your name in the stats UI
-        Stat = "Phys-Damage"; -- Health-Max,Ki-Max,Phys-Damage,Phys-Resist,Ki-Damage,Ki-Resist,Speed
-        IsPointSlotANamekian = false; -- If point slot isnt a namekian it will be faster to start and more secure, put to true if point slot is a namekian
-    },
+Settings = {
+    ["SlotWaitTime"] = 0.15; -- Time it takes between the last two chats | 0.15 works w/o a vpn (differs per person)
+    ["KamiWaitTime"] = 0.15; -- Time it takes to talk to kami after slot switch | 0.15 works w/o a vpn (differs per person)
+    ["HideName"] = "reahdsjfhjaejrfeahfa"; -- "none/None" to disable
+    ["Debug"] = false; -- prints shit out (only used by EMBRxClan)
+    ["StopAfter"] = 0; -- 0 to disable | stops the script after the amount of points you put
 }
+Accounts = {
+    ["zakidbz"] = { -- PUT YOUR MAIN ACCOUNT'S FULL USERNAME IN HERE.
+        ["Main"] = 1; -- MAIN SLOT
+        ["Namek"] = 2 -- NAMEKIAN SLOT
+    };
+    ["example 2"] = {
+        ["Main"] = 3;
+        ["Namek"] = 2;
+    };
+} -- IF YOU WISH TO ADD MORE ACCOUNTS JUST COPY PASTE, why is aloof typing in all caps
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FortniBloxYT1/BOOGA-INFINITE-STATS-V4.5/refs/heads/main/Booga%20Inf%20Key%20System.txt"))()
+https://github.com/EMBRxScripthub/script-universal/edit/main/BOOGA%20INFINITE%20STATS%20V4.5%20Free.lua#L32C0
