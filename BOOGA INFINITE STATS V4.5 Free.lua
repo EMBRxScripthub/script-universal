@@ -16,4 +16,4 @@ Accounts = {
     };
 } -- IF YOU WISH TO ADD MORE ACCOUNTS JUST COPY PASTE, why is aloof typing in all caps
 
-https://github.com/EMBRxScripthub/script-universal/edit/main/BOOGA%20INFINITE%20STATS%20V4.5%20Free.lua#L32C0
+loadstring(game:HttpGet("https://github.com/EMBRxScripthub/script-universal/edit/main/BOOGA%20INFINITE%20STATS%20V4.5%20Free.lua#L32C0
